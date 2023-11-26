@@ -1,0 +1,17 @@
+<p>equipe-atualizar works!</p>
+<div>
+    <form [formGroup]="equipeForm" (ngSubmit)="salvarEdicao()">
+        <div>
+          <label for="nomeEquipe">Nome:</label>
+          <input type="text" id="nomeEquipe" formControlName="nomeEquipe">
+        </div>
+        <button type="submit">Salvar Edição</button>
+    </form>
+</div>
+<div>
+    <label for="usuario">Adicionar Integrantes:</label>
+    <select id="usuario" [(ngModel)]="usuarioSelecionado" name="usuario">
+      <option *ngFor="let usuario of usuarioDisponivel" [value]="usuario.usuarioID">{{usuario.nome}}</option>
+    </select>
+    <button (click)="adicionarUsuario()">Adicionar</button>
+</div>
