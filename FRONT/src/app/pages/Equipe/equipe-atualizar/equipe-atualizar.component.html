@@ -1,0 +1,40 @@
+<hr>
+<h1>Atualizar Equipe</h1>
+<hr>
+
+<div class="form-container">
+  <form [formGroup]="equipeForm" (ngSubmit)="salvarEdicao()">
+    <div class="form-group">
+      <label for="nomeEquipe">Nome:</label>
+      <input type="text" id="nomeEquipe" formControlName="nomeEquipe">
+    </div>
+    <div class="button-group">
+      <button type="submit">Salvar Edição</button>
+      <button class="cancel-button" type="button" (click)="cancelarEdicao()">Cancelar</button>
+    </div>
+  </form>
+</div>
+
+<div class="form-container">
+  <label for="usuario">Adicionar Integrantes:</label>
+  <select id="usuario" [(ngModel)]="usuarioSelecionado" name="usuario">
+    <option *ngFor="let usuario of usuarioDisponivel" [value]="usuario.usuarioID">{{usuario.nome}}</option>
+  </select>
+  <button (click)="adicionarUsuario()" style="margin-top: 10px;">Adicionar</button>
+</div>
+
+<div class="form-container">
+  <label for="unidade">Unidades:</label>
+  <select id="unidade" [(ngModel)]="unidadeSelecionado" name="unidade">
+    <option *ngFor="let unidade of unidadesdisponvel" [value]="unidade.unidadeID">{{unidade.nome}}</option>
+  </select>
+  <button  (click)="atualizarUnidade()" style="margin-top: 10px;">Salvar Edição</button>
+</div>
+
+<div class="form-container">
+  <label for="lider">Adicionar Líder:</label>
+  <select id="lider" [(ngModel)]="liderSelecionado" name="lider">
+    <option *ngFor="let usuario of liderDisponivel" [value]="usuario.usuarioID">{{usuario.nome}}</option>
+  </select>
+  <button  (click)="adicionarLider()" style="margin-top: 10px;">Adicionar</button>
+</div>

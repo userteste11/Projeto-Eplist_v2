@@ -1,0 +1,40 @@
+<hr>
+<h1>Lista de Usuarios</h1>
+<hr>
+<table id="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>E-mail</th>
+      <th>Telefone</th>
+      <th>Cpf</th>
+      <th>Cargo</th>
+      <th>Equipe</th>
+      <th>Epi</th>
+      <th id="Cadastro">    
+        <a routerLink="/pages/Usuario/cadastrar"> 
+          <img src="assets/images/cadastrarusuario.png" alt="Cadastro de usuario">
+          <span>Cadastrar novo usuario</span>
+        </a>  
+      </th>
+    </tr>
+  </thead>
+    <tbody>
+    <tr *ngFor="let u of usuario">
+      <td>{{ u.usuarioID }}</td>
+      <td>{{ u.nome }}</td>
+      <td>{{ u.email }}</td>
+      <td>{{ u.telefone }}</td>
+      <td>{{ u.cpf }}</td>
+      <td>{{ u.cargo }}</td>
+      <td>{{ u.equipe }}</td>
+      <td><ul><li *ngFor="let epi of u.epis">{{ epi.descricao }}</li></ul></td>
+      <td>
+        <button (click)="editarUsuario(u.usuarioID)">Editar</button> 
+
+        <button class="delete-button" (click)="deletarUsuario(u.usuarioID)">Deletar</button>
+      </td>
+    </tr>
+  </tbody>
+  </table>

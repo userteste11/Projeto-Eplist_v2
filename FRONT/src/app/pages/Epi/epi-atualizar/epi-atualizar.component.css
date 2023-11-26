@@ -1,0 +1,83 @@
+h1 {
+    align-items: center;
+    text-align: center;
+}
+hr{
+    height: 80%;
+    padding: 1px;
+    background-color: black;
+    border: none;
+  }
+.form-container {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    background: #007bffc7;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+   
+  button:hover {
+    border: 2px solid #007bffc7;
+    padding: 15px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    background: white;
+    color: #007bffc7;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+  .button-group {
+    display: flex;
+    gap: 10px; 
+}
+.button-group button {
+    flex-grow: 1;
+}
+  
+.cancel-button {
+    padding: 15px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    background: #ff4949; 
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+.cancel-button:hover {
+    border: 2px solid #ff4949;
+    padding: 15px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    background: white;
+    color: #ff4949;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}

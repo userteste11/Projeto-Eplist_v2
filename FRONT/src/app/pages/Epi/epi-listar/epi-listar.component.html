@@ -1,0 +1,32 @@
+<hr>
+<h1>Lista de EPI's</h1>
+<hr>
+
+<table id="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Descrição</th>
+      <th>C.A</th>
+      <th>Quantidade</th>
+      <th id="Cadastro">
+        <a routerLink="/pages/Epi/cadastrar">
+            <img src="assets/images/cadastrarepi.png" alt="Cadastro de EPI">
+            <span>Cadastrar novo EPI</span>
+        </a>
+    </th>    
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let e of epi">
+      <td>{{ e.epiID }}</td>
+      <td>{{ e.descricao }}</td>
+      <td>{{ e.c_A }}</td>
+      <td>{{ e.quantidade }}</td>
+      <td>
+        <button (click)="editarEpi(e.epiID)">Editar</button>
+        <button class="delete-button" (click)="deletarEpi(e.epiID)">Deletar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

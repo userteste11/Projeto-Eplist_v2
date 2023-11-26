@@ -1,0 +1,125 @@
+#table {
+    width: 80%;
+    margin: 20px auto;
+}
+
+h1 {
+    align-items: center;
+    text-align: center;
+}
+hr{
+    height: 80%;
+    padding: 1px;
+    background-color: black;
+    border: none;
+  }
+
+th,
+td,
+tbody {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+thead {
+    background-color: #007bffc7;
+    color: #fff;
+    border-radius: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #87C4FF;
+}
+
+button {
+    padding: 15px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    background: #007bffc7;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    border: 2px solid #007bffc7;
+    padding: 15px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    background: white;
+    color: #007bffc7;
+    margin-right: 10px;
+}
+
+.delete-button {
+    padding: 15px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    background: #ff4949; 
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    border: 2px solid #ff4949;
+    padding: 15px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    background: white;
+    color: #ff4949;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+
+#Cadastro {
+    text-align: center;
+}
+
+#Cadastro a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+#Cadastro a:hover {
+    text-decoration: none;
+    color: #007bffc7;
+}
+
+#Cadastro img {
+    max-height: 50px;
+    transition: transform 0.3s;
+}
+#Cadastro a:hover img {
+    content: url(/assets/images/cadastrarepihover.png);
+    max-height: 50px;
+  }
+
+
+#Cadastro span {
+    line-height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    flex-grow: 1;
+}
+
+
+#Cadastro:hover{
+    border: 1px solid #007bffc7;
+    text-decoration: none;
+    border-radius: 5px;
+    background:white;
+    transition: background-color 0.3s; 
+    color: #007bffc7;
+  }
+
+  #Cadastro a:hover img {
+    content: url(/assets/images/cadastrarepihover.png);
+    max-height: 50px;
+  }
+

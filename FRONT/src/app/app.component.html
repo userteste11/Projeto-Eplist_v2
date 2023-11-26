@@ -1,0 +1,26 @@
+
+<div class="menu">
+    <div class="menuItem" (mouseover)="showList('listagens')" (mouseout)="hideList()">
+      LISTAGENS
+      <span class="arrow">▼</span>
+      <div id="listagens" class="list">
+        <a routerLink="/pages/Epi/listar">Listar EPI's</a>
+        <a routerLink="/pages/Usuario/listar">Listar Usuarios</a>
+        <a routerLink="/pages/Unidade/listar">Listar Unidades</a>
+        <a routerLink="/pages/Equipe/listar">Listar Equipes</a>
+      </div>
+    </div>
+    <div class="menuItem" (mouseover)="showList('cadastros')" (mouseout)="hideList()">
+      CADASTROS
+      <span class="arrow">▼</span>
+      <div id="cadastros" class="list">
+        <a routerLink="/pages/Epi/cadastrar">Cadastrar EPI's</a>
+        <a routerLink="/pages/Usuario/cadastrar">Cadastrar Usuarios</a>
+        <a routerLink="/pages/Unidade/cadastrar">Cadastrar Unidades</a>
+        <a routerLink="/pages/Equipe/cadastrar">Cadastrar Equipe</a>
+      </div>
+    </div>
+  </div>  
+  
+  <router-outlet></router-outlet>
+  

@@ -1,0 +1,120 @@
+table {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.usuarios-table{
+  width: 100%;
+}
+hr{
+  height: 80%;
+  margin: 1px;
+  padding: 1px;
+  background-color: black;
+  border: none;
+}
+
+h1{
+  align-items: center;
+  text-align: center;
+}
+
+thead {
+  background-color: #39A7FF;
+  color: #fff;
+  border-radius: 5px;
+}
+#teste{
+  border: 0px;
+}
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+ .linha:nth-child(even) {
+  background-color: #87C4FF;
+  border: 1px solid black;
+
+} 
+
+a{
+  display: flex;
+  text-decoration: none;
+  color: white;
+} 
+
+a img {
+max-height: 50px;
+margin-right: 10px;
+}
+
+a span {
+  line-height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  flex-grow: 1;
+}
+
+button {
+  padding: 15px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  background: #007bffc7;
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  border: 2px solid #007bffc7;
+  padding: 15px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  background: white;
+  color: #007bffc7;
+  margin-right: 10px;
+}
+
+.delete-button {
+  padding: 15px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  background: #ff4949; 
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  border: 2px solid #ff4949;
+  padding: 15px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  background: white;
+  color: #ff4949;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#Cadastro:hover{
+  border: 1px solid #39A7FF;
+  text-decoration: none;
+  border-radius: 5px;
+  background:white; 
+  transition: background-color 0.3s; 
+}
+#Cadastro a:hover img {
+  content: url(/assets/images/cadastrarunidadehover.png);
+  color: #39A7FF;
+  max-height: 50px;
+}
+
+#Cadastro a:hover {
+  text-decoration: none;
+  color: #007bffc7;
+}

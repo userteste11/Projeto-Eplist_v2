@@ -1,0 +1,22 @@
+<hr>
+<h1>Atualizar Unidade</h1>
+<hr>
+
+<div class="form-container">
+  <form [formGroup]="unidadeForm" (ngSubmit)="salvarEdicao()">
+    <div class="form-group">
+      <label for="nomeUnidade">Nome:</label>
+      <input type="text" id="nome" formControlName="nome">
+    </div>
+    <button type="submit">Salvar Edição</button>
+  </form>
+</div>
+
+<div class="form-container">
+  <label for="usuario">Usuários:</label>
+  <select id="usuario" [(ngModel)]="usuarioSelecionado" name="usuario">
+    <option *ngFor="let usuario of usuariosdisponiveis" [value]="usuario.usuarioID">{{usuario.nome + " - " + usuario.cargo}}</option>
+  </select>
+  <button (click)="adicionarUsuario()" style="margin-top: 10px; margin-right: 10px;" >Salvar Edição</button>
+  <button class="cancel-button" (click)="cancelarEdicao()" style="margin-top: 10px;">Cancelar Edição</button>
+</div>

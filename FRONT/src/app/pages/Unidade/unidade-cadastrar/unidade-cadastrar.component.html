@@ -1,0 +1,29 @@
+<hr>
+<h1>Cadastrar Unidade</h1>
+<hr>
+
+<div class="form-container">
+  <div class="form-group">
+    <label for="unidadeNome">Nome da Unidade:</label>
+    <input id="unidadeNome" [(ngModel)]="unidadeNome" name="unidadeNome" />
+  </div>
+
+  <div class="form-group">
+    <label for="gestor">Gestor:</label>
+    <select id="gestor" [(ngModel)]="gestorSelecionado" name="gestor">
+      <option *ngFor="let usuario of usuariosgestor" [value]="usuario.usuarioID">{{usuario.nome}}</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="tecnico">Técnico:</label>
+    <select id="tecnico" [(ngModel)]="tecnicoSelecionado" name="tecnico">
+      <option *ngFor="let usuario of usuariostecnico" [value]="usuario.usuarioID">{{usuario.nome}}</option>
+    </select>
+  </div>
+
+  <div class="button-group">
+    <button (click)="cadastrarUnidade()">Cadastrar Unidade</button>
+    <button class="cancel-button" (click)="cancelarCadastro()">Cancelar</button>
+  </div>
+</div>

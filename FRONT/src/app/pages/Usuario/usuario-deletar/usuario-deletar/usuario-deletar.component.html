@@ -1,0 +1,19 @@
+<div class="confirmation-container">
+  <h2>Confirmação de Exclusão</h2>
+  <p>Você tem certeza de que deseja excluir este Usuário?</p>
+  <button class="confirm-button" (click)="deletarUsuario()">Confirmar Exclusão</button>
+  <button class="cancel-button" (click)="cancelar()">Cancelar</button>
+</div>
+
+<div *ngIf="usuario">
+  <div class="epi-removal-container">
+    <h2>Remover EPI</h2>
+    <p>EPIS do Usuário</p>
+    <ul>
+      <li *ngFor="let epi of usuario.epis">
+        {{ epi.descricao }}
+        <button class="remove-button" (click)="removerEpi(epi.epiID)">Excluir</button>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<hr>
+<h1>Cadastro de Equipe</h1>
+<hr>
+
+<div class="form-container">
+  <div class="form-group">
+    <label for="equipeNome">Nome da Equipe:</label>
+    <input type="text" id="equipeNome" name="equipeNome" [(ngModel)]="nomeEquipe" required>
+  </div>
+
+  <div class="form-group">
+    <label for="unidade">Unidade:</label>
+    <select id="unidade" name="unidade" [(ngModel)]="unidadeID" required>
+      <option *ngFor="let unidade of unidades" [value]="unidade.unidadeID">{{unidade.nome}}</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="lider">Líder:</label>
+    <select id="lider" name="lider" [(ngModel)]="liderID" required>
+      <option *ngFor="let usuario of UsuarioLider" [value]="usuario.usuarioID">{{usuario.nome}}</option>
+    </select>
+  </div>
+
+  <div class="button-group">
+    <button (click)="cadastrarEquipe()">Cadastrar Equipe</button>
+    <button class="cancel-button" (click)="cancelarCadastro()">Cancelar</button>
+  </div>
+</div>

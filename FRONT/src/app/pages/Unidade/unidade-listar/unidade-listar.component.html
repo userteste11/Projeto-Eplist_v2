@@ -1,0 +1,50 @@
+<hr>
+<h1>Lista de Unidades</h1>
+<hr>
+
+<body>
+  
+<table class="unidades-table">
+    <thead>
+        <tr class="linha">
+            <th>Unidade ID</th>
+            <th>Nome</th>
+            <th>Usuários</th>
+            <th id="Cadastro">    
+              <a routerLink="/pages/Unidade/cadastrar"> 
+                <img src="assets/images/cadastrarunidade.png" alt="Cadastro de unidade">
+                <span>Cadastrar nova unidade</span>
+              </a>  
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let unidade of unidades" class="linha">
+            <td class="">{{ unidade.unidadeID }}</td>
+            <td>{{ unidade.nome }}</td>
+            <td>
+                <table class="usuarios-table">
+                    <tbody>
+                        <tr *ngFor="let usuario of unidade.usuarios">
+                          
+                            <td id="teste">
+                              <hr>
+                                {{ usuario.usuarioID }} - {{ usuario.nomeUsuario }}<br>
+                                Email: {{ usuario.email }}<br>
+                                Telefone: {{ usuario.telefone }}<br>
+                                CPF: {{ usuario.cpf }}<br>
+                                Cargo: {{ usuario.cargo }}
+                              <hr>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>
+                <button (click)="editarUnidade(unidade.unidadeID)">Editar</button>
+                <button class="delete-button" (click)="deletarUnidade(unidade.unidadeID)">Deletar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</body>

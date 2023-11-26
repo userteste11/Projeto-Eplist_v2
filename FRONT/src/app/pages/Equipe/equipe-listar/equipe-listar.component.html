@@ -1,0 +1,35 @@
+<hr>
+<h1>Lista de Equipes</h1>
+<hr>
+
+<table id="table">
+  <thead>
+    <tr>
+      <th>Equipe ID</th>
+      <th>Nome da Equipe</th>
+      <th>Nome da Unidade</th>
+      <th>Usuário</th>
+      <th id="Cadastro">
+        <a routerLink="/pages/Equipe/cadastrar">
+          <img src="assets/images/cadastrarequipe.png" alt="Cadastrar Equipe">
+          <span>Cadastrar nova Equipe</span>
+        </a>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let equipe of equipes">
+      <td>{{ equipe.equipeID }}</td>
+      <td>{{ equipe.nomeEquipe }}</td>
+      <td>{{ equipe.unidade.nome }}</td>
+      <td *ngFor="let usuario of equipe.usuarios">
+        {{"Nome: "+usuario.nome +" Cargo: "+usuario.cargo}}
+        <div><ul><li *ngFor="let epi of usuario.epis">{{epi.descricao}}</li></ul></div>
+      </td>
+      <td>
+        <button (click)="editarEquipe(equipe.equipeID)">Editar</button>
+        <button class="delete-button" (click)="deletarEquipe(equipe.equipeID)">Deletar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,26 @@
+<h2>Confirmação de Exclusão</h2>
+<p>Você tem certeza de que deseja excluir esta Unidade?</p>
+
+<div class="button-container">
+<button (click)="deletarUnidade()" style="margin-right: 10px;">Confirmar Exclusão</button>
+<button class="cancel-button" (click)="cancelar()">Cancelar</button>
+</div>
+<div *ngIf="unidade" class="confirmation-container">
+  <h2>Remover Usuario</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Usuário</th>
+        <th>Ação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of unidade.usuarios">
+        <td>{{ usuario.nomeUsuario }}</td>
+        <td>
+          <button class="remove-button" (click)="removerUsuario(usuario.usuarioID)">Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

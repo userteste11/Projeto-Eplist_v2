@@ -1,0 +1,60 @@
+h2 {
+    align-items: center;
+    text-align: center;
+  }
+
+p{
+    text-align: center;
+}
+  
+  .button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px; /* Adiciona espaço acima dos botões */
+  }
+  
+  .button-group button {
+    flex-grow: 1;
+  }
+  
+  button {
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    border: 2px solid #007bffc7;
+    padding: 15px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    background: white;
+    color: #007bffc7;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cancel-button {
+    background: #ff4949;
+    color: white;
+  }
+  
+  .cancel-button:hover {
+    border: 2px solid #ff4949;
+    background: white;
+    color: #ff4949;
+  }
+  
+  .remove-button {
+    background: #ff8c00;
+    color: white;
+  }
+  
+  .remove-button:hover {
+    border: 2px solid #ff8c00;
+    background: white;
+    color: #ff8c00;
+  }
+  
