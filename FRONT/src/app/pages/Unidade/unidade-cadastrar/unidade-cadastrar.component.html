@@ -3,7 +3,7 @@
     <label for="unidadeNome">Nome da Unidade:</label>
     <input id="unidadeNome" [(ngModel)]="unidadeNome" name="unidadeNome" />
   
-    <label for="gestor">Gestor: </label>
+    <label for="gestor">Gestor:</label>
     <select id="gestor" [(ngModel)]="gestorSelecionado" name="gestor">
       <option *ngFor="let usuario of usuariosgestor" [value]="usuario.usuarioID">{{usuario.nome}}</option>
     </select>

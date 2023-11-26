@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pichau\\Desktop\\v2\\Projeto-Eplist\\Eplist0.2\\EPIlist\\EPIlist.csproj": {}
+    "C:\\Users\\alexa\\OneDrive\\Área de Trabalho\\Agora\\Projeto-Eplist_v2\\Eplist0.2\\EPIlist\\EPIlist.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pichau\\Desktop\\v2\\Projeto-Eplist\\Eplist0.2\\EPIlist\\EPIlist.csproj": {
+    "C:\\Users\\alexa\\OneDrive\\Área de Trabalho\\Agora\\Projeto-Eplist_v2\\Eplist0.2\\EPIlist\\EPIlist.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pichau\\Desktop\\v2\\Projeto-Eplist\\Eplist0.2\\EPIlist\\EPIlist.csproj",
+        "projectUniqueName": "C:\\Users\\alexa\\OneDrive\\Área de Trabalho\\Agora\\Projeto-Eplist_v2\\Eplist0.2\\EPIlist\\EPIlist.csproj",
         "projectName": "EPIlist",
-        "projectPath": "C:\\Users\\Pichau\\Desktop\\v2\\Projeto-Eplist\\Eplist0.2\\EPIlist\\EPIlist.csproj",
-        "packagesPath": "C:\\Users\\Pichau\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pichau\\Desktop\\v2\\Projeto-Eplist\\Eplist0.2\\EPIlist\\obj\\",
+        "projectPath": "C:\\Users\\alexa\\OneDrive\\Área de Trabalho\\Agora\\Projeto-Eplist_v2\\Eplist0.2\\EPIlist\\EPIlist.csproj",
+        "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alexa\\OneDrive\\Área de Trabalho\\Agora\\Projeto-Eplist_v2\\Eplist0.2\\EPIlist\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Pichau\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -72,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.413\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

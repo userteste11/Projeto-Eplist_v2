@@ -6,3 +6,13 @@
 td{
     text-align: center;
 }
+
+a{
+    border: 2px solid black;
+    color: black;
+    padding: 3px;
+    text-decoration: none;
+    border-radius: 5px;
+    background:#007bff;
+    color: white;
+}
